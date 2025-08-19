@@ -309,8 +309,8 @@ const balance = totalIncome - totalExpense;
       {/* Modal */}
       <Dialog open={openModal} onClose={() => setOpenModal(false)} className="fixed z-50 inset-0 overflow-y-auto">
         <div className="flex items-center justify-center min-h-screen px-4">
-          <Dialog.Panel className="bg-white rounded-xl shadow-xl p-6 max-w-md w-full">
-            <Dialog.Title className="text-lg font-semibold mb-4">Add Expense</Dialog.Title>
+          <div className="bg-white rounded-xl shadow-xl p-6 max-w-md w-full">
+            <h2 className="text-lg font-semibold mb-4">Add Expense</h2>
             <ExpenseForm
               form={form}
               setForm={setForm}
@@ -328,7 +328,7 @@ const balance = totalIncome - totalExpense;
                 Cancel
               </button>
             </div>
-          </Dialog.Panel>
+          </div>
         </div>
       </Dialog>
 
