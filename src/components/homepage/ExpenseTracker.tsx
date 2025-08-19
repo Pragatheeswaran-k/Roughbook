@@ -22,7 +22,7 @@ export default function ExpenseTracker() {
   const [adding, setAdding] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
   const [deleteId, setDeleteId] = useState<string | null>(null);
-  const amountRef = useRef<HTMLInputElement>(null);
+  const amountRef = useRef<HTMLInputElement>(null!);
   const [fieldErrors, setFieldErrors] = useState<{ [k: string]: string }>({});
   const [openModal, setOpenModal] = useState(false);
   const [userProfile, setUserProfile] = useState<{ xp: number; level: number } | null>(null);
