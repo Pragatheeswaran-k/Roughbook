@@ -18,15 +18,7 @@ export default function ExpenseTracker() {
   const [expenses, setExpenses] = useState<ExpenseItem[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [form, setForm] = useState<{
-    date: string;
-    category: string;
-    amount: string;
-    note: string;
-    type: string;
-    paymentMode: string;
-    tags: string;
-  }>({ date: "", category: "", amount: "", note: "", type:"", paymentMode: "", tags: "" });
+  const [form, setForm] = useState({ date: "", category: "", amount: "", note: "", type:"", paymentMode: "", tags: "" });
   const [adding, setAdding] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
   const [deleteId, setDeleteId] = useState<string | null>(null);

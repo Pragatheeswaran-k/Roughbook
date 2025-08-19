@@ -68,7 +68,7 @@ type ExpenseFormProps = {
     adding: boolean;
     fieldErrors: Record<string, string>;
     categories: string[];
-    amountRef: React.RefObject<HTMLInputElement | null>;
+    amountRef: React.RefObject<HTMLInputElement>;
   };
   
   export const ExpenseForm = ({
